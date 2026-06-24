@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtualenv
+venv/
+.env/
+.env.*
+
+# Data (CIFAR-100)
+data/cifar-100-python/
+data/cifar-100-python-*/
+data/cifar-100-python.tar.gz
+
+# Large artifacts
+*.pth
+*.pt
+
+# Logs
+logs/
+*.log
+
+# Results (optional; keep if you want to publish figures)
+results/*.png
+results/*.jpg
+results/*.jpeg
+
+# OS
+.DS_Store
+
