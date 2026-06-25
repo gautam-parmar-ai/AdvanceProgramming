@@ -1,7 +1,4 @@
-"""
-Task-aware output masking for class-incremental learning
-Prevents interference between old and new tasks.
-"""
+
 
 import torch
 

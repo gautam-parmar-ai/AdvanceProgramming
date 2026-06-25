@@ -1,6 +1,4 @@
-"""
-Correct evaluation protocol for Class-Incremental Learning
-"""
+
 
 import torch
 import numpy as np

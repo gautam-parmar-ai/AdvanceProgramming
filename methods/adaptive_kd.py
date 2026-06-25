@@ -1,14 +1,4 @@
-"""
-Adaptive Knowledge Distillation
 
-Computes:
-1. KD Loss (KL Divergence)
-2. Adaptive alpha and beta weights
-
-Alpha and beta are adjusted dynamically using:
-- Student prediction entropy
-- Previous task accuracy (optional)
-"""
 
 import torch
 import torch.nn as nn

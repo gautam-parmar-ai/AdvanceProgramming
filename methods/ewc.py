@@ -1,9 +1,4 @@
-"""
-EWC (Elastic Weight Consolidation)
 
-Prevents catastrophic forgetting by penalizing
-changes to important parameters from previous tasks.
-"""
 
 import torch
 import torch.nn.functional as F

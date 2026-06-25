@@ -1,12 +1,4 @@
-"""
-Forgetting Metrics for Continual Learning
 
-Implements:
-- Average Accuracy (ACC)
-- Forgetting (F)
-- Backward Transfer (BWT)
-- Retention Score
-"""
 
 import numpy as np
 

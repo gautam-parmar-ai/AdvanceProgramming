@@ -1,12 +1,4 @@
-"""
-models/student.py
 
-Student network for continual learning + knowledge distillation.
-
-- ResNet18 backbone (lightweight)
-- Trainable model
-- Extracts intermediate features for feature distillation
-"""
 
 import torch
 import torch.nn as nn

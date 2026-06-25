@@ -1,13 +1,4 @@
-"""
-Loss orchestration for continual learning system.
 
-Combines:
-- Cross Entropy Loss
-- Adaptive KD Loss
-- Feature Distillation Loss
-- EWC Loss
-- Replay Loss
-"""
 
 import torch
 import torch.nn as nn
