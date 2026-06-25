@@ -1,10 +1,3 @@
-"""
-datasets/task_split.py
-
-Converts CIFAR-100 into class-incremental learning tasks.
-Each task contains a fixed subset of classes.
-"""
-
 import torch
 from torch.utils.data import Subset
 
@@ -23,9 +16,6 @@ class TaskSplitter:
 
         self.task_class_map = self._create_task_map()
 
-    # -----------------------------
-    # Create class-to-task mapping
-    # -----------------------------
     def _create_task_map(self):
 
         task_map = {}
@@ -39,9 +29,6 @@ class TaskSplitter:
 
         return task_map
 
-    # -----------------------------
-    # Filter dataset by class list
-    # -----------------------------
     def _filter_by_classes(self, dataset, class_list):
 
         indices = [
@@ -51,9 +38,6 @@ class TaskSplitter:
 
         return Subset(dataset, indices)
 
-    # -----------------------------
-    # Get task-specific datasets
-    # -----------------------------
     def get_task(self, task_id):
 
         class_list = self.task_class_map[task_id]
@@ -63,9 +47,6 @@ class TaskSplitter:
 
         return train_subset, test_subset
 
-    # -----------------------------
-    # Get all tasks
-    # -----------------------------
     def get_all_tasks(self):
 
         tasks = []
