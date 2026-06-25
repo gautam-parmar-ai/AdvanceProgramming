@@ -32,7 +32,7 @@ CIFAR-100 dataset
 Split into:
 
 - 10 tasks
-- 10 classes per task
+- 10 classes per tasks
 
 ---
 
